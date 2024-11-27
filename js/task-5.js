@@ -1,10 +1,10 @@
-const button = document.querySelector('.change-color');
-const box = document.querySelector('.widget');
-const textColor = document.querySelector('.color');
+const button = document.querySelector(".change-color");
+const textColor = document.querySelector(".color");
 button.addEventListener("click", handleClick);
 function handleClick(event) {
-  box.style.backgroundColor = getRandomHexColor(); 
-  textColor.textContent = getRandomHexColor();
+  const random = getRandomHexColor();
+  document.body.style.backgroundColor = random;
+  textColor.textContent = random;
 }
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)

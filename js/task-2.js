@@ -34,17 +34,7 @@ const galleryItems = images.map(image => {
 
 
 
-// const galleryItems = images.map(image => {
-//   const item = document.createElement('li');
-//   item.classList.add('gallery-item');
-//   const img = document.createElement('img');
-//   img.classList.add('gallery-image');
-//   img.src = image.url;
-//   img.alt = image.alt;
-//   item.append(img);
-//   return item;
-// });
-// gallery.append(...galleryItems); 
+
 
 
 
